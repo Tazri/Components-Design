@@ -1,0 +1,168 @@
+:root {
+  --var-backgroud-color: #10131c;
+  --var-menu-background-color: #212532;
+  --var-dot-background-intial-color: aliceblue;
+  --var-dot-background-active-color: #333849;
+  --var--d: 12px;
+  --var--ad: 60px;
+  --var-transition-delay: 0.1s;
+  --var-icon-font-size: 1.34em;
+  --var-icon-font-hover-color: rgb(0, 136, 255);
+  --var-icon-hover-drop-shadow: drop-shadow(
+      0 0 2px var(--var-icon-font-hover-color)
+    )
+    drop-shadow(0 0 5px var(--var-icon-font-hover-color))
+    drop-shadow(0 0 7px var(--var-icon-font-hover-color));
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--var-backgroud-color);
+  min-width: 200px;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background-color: var(--var-menu-background-color);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-delay: 0.7s;
+}
+
+.menu.active {
+  width: 220px;
+  height: 220px;
+  transition-delay: 0s;
+}
+
+.menu span {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: var(--var-dot-background-intial-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: 0.5s ease;
+}
+
+.menu.active span {
+  width: 45px;
+  height: 45px;
+  background-color: var(--var-dot-background-active-color);
+}
+
+.menu span .icon {
+  transition: 0.5s;
+  font-size: 0em;
+}
+
+.menu.active span .icon {
+  font-size: var(--var-icon-font-size);
+  color: var(--var-dot-background-intial-color);
+}
+
+.menu.active span:hover .icon {
+  color: var(--var-icon-font-hover-color);
+  filter: var(--var-icon-hover-drop-shadow);
+}
+
+/* set up position */
+.menu .up1 {
+  transform: translate(calc(-1 * var(--var--d)), calc(-1 * var(--var--d)));
+  transition-delay: calc(var(--var-transition-delay));
+}
+.menu .up2 {
+  transform: translate(calc(0 * var(--var--d)), calc(-1 * var(--var--d)));
+  transition-delay: calc(var(--var-transition-delay) * 4);
+}
+
+.menu .up3 {
+  transform: translate(calc(1 * var(--var--d)), calc(-1 * var(--var--d)));
+  transition-delay: calc(var(--var-transition-delay) * 2);
+}
+
+.menu.active .up1 {
+  transform: translate(calc(-1 * var(--var--ad)), calc(-1 * var(--var--ad)));
+}
+.menu.active .up2 {
+  transform: translate(calc(0 * var(--var--ad)), calc(-1 * var(--var--ad)));
+}
+
+.menu.active .up3 {
+  transform: translate(calc(1 * var(--var--ad)), calc(-1 * var(--var--ad)));
+}
+
+/* set mid position */
+.menu .mid1 {
+  transform: translate(calc(-1 * var(--var--d)), 0);
+  transition-delay: calc(var(--var-transition-delay) * 5);
+}
+
+.menu .mid2 {
+  z-index: 1;
+  transform: translate(calc(0 * var(--var--d)), 0);
+  transition-delay: calc(var(--var-transition-delay) * 8);
+}
+
+.menu .mid3 {
+  transform: translate(calc(1 * var(--var--d)), 0);
+  transition-delay: calc(var(--var-transition-delay) * 7);
+}
+
+.menu.active .mid1 {
+  transform: translate(calc(-1 * var(--var--ad)), 0);
+}
+
+.menu.active .mid2 {
+  transform: translate(calc(0 * var(--var--ad)), 0);
+}
+
+.menu.active .mid3 {
+  transform: translate(calc(1 * var(--var--ad)), 0);
+}
+
+/* set dwn position */
+.menu .dwn1 {
+  transform: translate(calc(-1 * var(--var--d)), var(--var--d));
+  transition-delay: calc(var(--var-transition-delay) * 3);
+}
+
+.menu .dwn2 {
+  transform: translate(calc(0 * var(--var--d)), var(--var--d));
+  transition-delay: calc(var(--var-transition-delay) * 6);
+}
+
+.menu .dwn3 {
+  transform: translate(calc(1 * var(--var--d)), var(--var--d));
+  transition-delay: calc(var(--var-transition-delay) * 1);
+}
+
+.menu.active .dwn1 {
+  transform: translate(calc(-1 * var(--var--ad)), var(--var--ad));
+}
+
+.menu.active .dwn2 {
+  transform: translate(calc(0 * var(--var--ad)), var(--var--ad));
+}
+
+.menu.active .dwn3 {
+  transform: translate(calc(1 * var(--var--ad)), var(--var--ad));
+}
