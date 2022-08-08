@@ -1,0 +1,187 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    transition: all 0.3s linear;
+}
+
+body{
+    position: relative;
+    background-color: #222;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container,.newclear,.shell,.ball{
+    border-radius: 50%;
+}
+
+.container{
+    position: absolute;
+}
+
+.container{
+    position: relative;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+}
+
+.container > div{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 8px solid transparent;
+}
+
+.shell{
+    position: relative;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px black,inset 0px 0px 12px black;
+}
+
+.shell1{
+    animation: rotate 8s linear infinite;
+}
+
+.shell2{
+    animation: rotate 5s linear infinite;
+}
+
+.shell3{
+    animation: rotate 3s linear infinite;
+}
+
+.shell1{
+    width: 495px;
+    height: 495px;
+}
+
+.ball{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #222;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+}
+
+.shell1 .ball1,.shell3 .ball1{
+    left: 50%;
+    transform: translate(-50%,-19px);
+}
+
+.shell1 .ball2,.shell3 .ball2{
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%,19px);
+}
+.shell2{
+    width: 380px;
+    height: 380px;
+}
+
+.shell2 .ball1{
+    left: 0px;
+    top: 50%;
+    transform: translate(-19px,-50%);
+}
+
+.shell2 .ball2{
+    right: 0px;
+    top: 50%;
+    transform: translate(19px,-50%);
+}
+
+.shell3{
+    width: 280px;
+    height: 280px;
+}
+
+.newclear{
+    width: 120px;
+    height: 120px;
+    background-color: #222;
+    box-shadow: 0px 0px 15px black;
+}
+
+@keyframes rotate {
+    100%{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+
+@media (max-width : 580px) {
+    .container{
+        width: 260px;
+        height: 260px;
+    }
+    
+    .container > div{
+        border: 4.48px solid transparent;
+    }
+    
+    .shell1{
+        width: 260px;
+        height: 260px;
+    }
+    
+    .shell2{
+        width: 180px;
+        height: 180px;
+    }
+    
+    .shell3{
+        width: 120px;
+        height: 120px;
+    }
+
+    .ball{
+        width: 10px;
+        height: 10px;
+    }
+    
+    .shell1 .ball1,.shell3 .ball1{
+        left: 50%;
+        transform: translate(-50%,-7.24px);
+    }
+    
+    .shell1 .ball2,.shell3 .ball2{
+        left: 50%;
+        bottom: 0px;
+        transform: translate(-50%,7.24px);
+    }
+    
+    .shell2 .ball1{
+        left: 0px;
+        top: 50%;
+        transform: translate(-7.24px,-50%);
+    }
+    
+    .shell2 .ball2{
+        right: 0px;
+        top: 50%;
+        transform: translate(7.24px,-50%);
+    }
+    
+    .newclear{
+        width: 40px;
+        height: 40px;
+    }      
+}
+
+@media (max-width : 320px) {
+    .container{
+        width: 240px;
+        height: 240px;
+    }
+
+    .shell1{
+        width: 240px;
+        height: 240px;
+    }
+}
