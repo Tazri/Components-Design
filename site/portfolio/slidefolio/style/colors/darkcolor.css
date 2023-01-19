@@ -1,0 +1,175 @@
+.dark{
+    background-color: #101010;
+    color: #f0f8ff;
+}
+
+.dark .special{
+    color: #00ff73;
+}
+
+
+/* start indicator */
+
+.dark .indicator ul{
+    background-color: rgba(0, 128, 58, 0.459);
+}
+
+.dark .indicator ul .active{
+    background-color: #00ff73;
+    color: #101010;
+}
+
+.dark .indicator ul li:hover{
+    background-color: #00ff73;
+    color: #101010;
+}
+
+/* end indicator */
+
+
+/*************************** end *************************/
+
+
+/** start home **/
+.dark .home_container-about p{
+    color: #b5b6b8;
+}
+
+.dark .home_container-img .loader1{
+    border-top : 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-right: 2px solid #00ff73;;
+    border-left: 2px solid #00ff73;
+}
+
+.dark .home_container-img .loader2{
+    border-top : 2px solid #ff5100;;
+    border-bottom: 2px solid #ff5100;;
+    border-right: 2px solid transparent;;
+    border-left: 2px solid transparent;
+}
+
+.dark .home_container-img .loader3{
+    border-top : 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-right: 2px solid #00ff73;;
+    border-left: 2px solid #00ff73;
+}
+
+
+.dark .home_container p{
+    color: rgb(167, 168, 168);
+}
+
+.dark .home button{
+    border: 2px solid #00ff73;
+    background-color: #00ff73;
+    color: #101010;
+}
+
+.dark .home button:hover{
+    background-color: #101010;
+    color: #00ff73;
+}
+
+
+/** end home **/
+
+
+/************************ x ************************************/
+
+/** start aboutme **/
+.dark .aboutme_container-text button{
+    color: #101010;
+    background-color: #00ff73;
+    border: 1px solid #00ff73;
+}
+
+.dark .aboutme_container-text button:hover{
+    color: #00ff73;
+    background-color: #101010;
+}
+
+.dark .aboutme_container-text .line{
+    background-color: #00ff73;
+}
+
+.dark .aboutme_container-text p {
+    color: #b5b6b8;
+}
+
+.dark .aboutme_container-img{
+    background-color: #00ff73;
+}
+
+.dark .aboutme_container-img .aboutdot{
+    background-color: #00ff73;
+}
+/** end aboutme **/
+
+
+/*************************** end ******************************/
+
+/** start skill **/
+.dark .skillicon{
+    color : #00ff73;
+}
+
+.dark .skillline{
+    background-color: #00ff73;
+}
+/** end skill **
+
+/*************************** end ******************************/
+
+/** start service*/
+.dark .serviceline{
+    background-color: #00ff73;
+}
+
+.dark .serviceicon,.dark .service h3{
+    color: #00ff73;
+}
+
+.dark .service button{
+    border: 1px solid #00ff73;
+    color: #101010;
+    background-color: #00ff73;
+}
+
+.dark .service button:hover{
+    color: #00ff73;
+    background-color: #101010;
+}
+
+/** end service */
+
+/*********************** end ****************/
+
+/** start contactme **/
+.dark .contactme_container .socialbox li a{
+    color: #00ff73;
+}
+
+.dark .socialline{
+    background-color: #00ff73;
+}
+
+.dark .contactme textarea{
+    border: 2px solid #434444;
+}
+
+.dark .contactme textarea:focus{
+    border: 2px solid #00ff73;
+}
+
+.dark .contactme button{
+    border: 2px solid #00ff73;
+    background-color: #00ff73;
+    color: #101010;
+}
+
+.dark .contactme button:hover{
+    background-color: #101010;
+    color: #00ff73;
+}

@@ -1,0 +1,37 @@
+@font-face {
+    font-family: opensan;
+    src: url(./../font/OpenSans.ttf);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: opensan,"arial";
+    transition: all 0.3 linear;
+}
+
+html{
+    overflow: hidden;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+*::-moz-focus-inner{
+    outline: none;
+    border: none;
+}
+
+*::-moz-focus-outer{
+    outline: none;
+    border: none;
+}
+
+*:focus{
+    outline: none;
+}

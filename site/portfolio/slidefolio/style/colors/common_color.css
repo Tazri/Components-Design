@@ -1,0 +1,10 @@
+/** start modes **/
+.modes .darkmode{
+    background-color: #00ff73;
+    color: #101010;
+}
+
+.modes .lightmode{
+    color: #ff5100;
+}
+/** end modes **/

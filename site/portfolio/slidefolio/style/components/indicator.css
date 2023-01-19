@@ -1,0 +1,33 @@
+.indicator{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%,200%);
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+
+.indicator ul{
+    min-width: 240px;
+    max-width: 300px;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    padding: 10px 10px;
+    display: flex;
+    flex: row wrap;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.indicator ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.5s linear;
+}

@@ -1,0 +1,103 @@
+.skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills_container{
+    max-width: 1000px;
+    width: 80%;
+    min-width: 270;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 20px;
+}
+
+.skills_container h1{
+    margin-bottom: 50px;
+}
+
+.skillsbox{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.skill{
+    width: 220px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.skill h3{
+    margin: 10px 0px;
+}
+.skill .skillicon{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.skillline{
+    position: absolute;
+    bottom: -6px;
+    left:  50%;
+    transform: translate(-50%,400%);
+    transform-origin: center;
+    width: 60px;
+    height: 3px;
+    border-radius: 3px;
+    transition: all 0.3s linear;
+}
+
+.lineup .skillline{
+    width : 100px;
+}
+
+/* media query */
+
+@media only screen and (max-width: 950px) {
+    .skill{
+        margin: 20px 10px;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .skillsbox{
+        flex-flow: column wrap;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 380px) { 
+    .skills h1{
+        font-size: 20px;
+    }
+
+    .skill h3{
+        font-size: 15px;
+    }
+
+    .skill p{
+        font-size: 12px;
+    }
+
+    .skill{
+        margin: 20px 0px;
+    }
+
+    .skills_container{
+        padding: 2px;
+    }
+}
